@@ -1,0 +1,184 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cartazes PM Tech®</title>
+    <link type="javas" href="oioioi.js">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="paulo.js"></script>
+    <link rel="icon" type="image/png" href="image/icone_barra_preçoplay.png">
+    <link rel="stylesheet" href="paulo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="./Rustico Regular 400.otf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Caveat+Brush&amp;family=Cedarville+Cursive&amp;family=Chelsea+Market&amp;family=Courier+Prime:ital,wght@1,700&amp;family=Barrio&amp;family=Trade+Winds&amp;family=Righteous&amp;family=Roboto:ital,wght@0,400;1,900&amp;family=Sarala:wght@700&amp;family=Special+Elite&amp;display=swap" rel="stylesheet">
+</head><div id="night_shift_d" style="transition: opacity 0.1s ease 0s; z-index: 2147483647; margin: 0px; border-radius: 0px; padding: 0px; pointer-events: none; position: fixed; top: -10%; right: -10%; width: 120%; height: 120%; mix-blend-mode: multiply; display: block; opacity: 0.3; background: rgb(17, 17, 17) !important;"></div>
+<body>
+    <div id="night_shift_d" style="transition: opacity 0.1s ease 0s; z-index: 2147483647; margin: 0px; border-radius: 0px; padding: 0px; pointer-events: none; position: fixed; top: -10%; right: -10%; width: 120%; height: 120%; mix-blend-mode: multiply; display: block; opacity: 0.3; background: rgb(17, 17, 17) !important;"></div>
+
+    <header>
+        <h1></h1>
+    </header>
+    <div class="conteudo">
+        <section class="section1">
+            <div id="placa">
+                <div id="tpromoção"><p id="promocao">OFERTA</p></div>
+                <div id="produto">
+                <p id="tipoDeProduto">Tipo de produto</p>
+                <p id="NomeDoProduto">PRODUTO</p> 
+                <p id="descricao">Opcional</p>
+                </div>
+                <div id="dvalor">
+                <div id="base"></div>
+                <p name="Valor" class="preco" id="s">R$;</p>
+                <p name="Reais" class="preco" id="Reais">10</p>
+                <p name="Virgula" class="preco" id="virgula">,</p>
+                <p name="centavos" class="preco" id="centavos">99</p>
+                <p name="peso" class="preco" id="peso">Kg</p>
+                </div> 
+            </div>
+
+            <div id="dentrada">
+                <label id="logo" for="testa"><h1>Gerador de Cartazes</h1></label>         
+                <input name="TipoDeProduto" class="entrada" id="itipoDeProduto" placeholder="Digite o tipo do produto">
+                <label for="itipoDeProduto">Tipo</label>
+                <br><br>
+                <input name="NomeDoProduto" class="entrada" id="iNomeDoProduto" placeholder="Digite o nome do produto">
+                <label for="iNomeDoProduto">Nome</label>
+                <br><br>
+                <input name="Descrição" class="entrada" id="idescricao" placeholder="Opcional">
+                <label for="idescricao">Descrição</label>
+                <br><br>
+                <input name="ValorDoProduto" class="entrada" id="iValorDoProduto" placeholder="10,99">
+                <label for="iValorDoProduto">Valor</label>
+                <br><br>
+                <input name="Peso/MililitroDoProduto" id="kg" placeholder="Kg">
+                <label for="kg">Medida</label>
+                <br><br>
+                <select onchange="gerar()" id="opcoes">
+                <!--     <optgroup label="CABEÇALHO"> -->
+                <!-- <option value="a2">OFERTA</option> -->
+                <!--     </optgroup> -->
+                    <optgroup label="FONTE:">
+                <option value="b1" style="font-family: Rustico, cursive">Rustico</option>
+                <option value="b2" style="font-family: Anton, sans-serif">Anton</option>
+                <option value="b3" style="font-family: Chelsea Market, cursive">Chelsea Market</option>
+                <option value="b4" style="font-family: Courier Prime, monospace">Courier Prime</option>
+                <option value="b5" style="font-family: Barrio, cursive">Barrio</option>
+                <option value="b6" style="font-family: Krona One, cursive">Trade Winds</option>
+                <option value="b7" style="font-family: Caveat Brush, cursive">Caveat Brush</option>
+                <option value="b8" style="font-family: Righteous, cursive;">Special Elite</option>
+                <option value="b10">Cor: Tipo de produto</option>
+                <option value="b11">Cor: Nome do produto</option>
+                <option value="b9">Cor: Descrição</option>
+                <option value="b12">Cor: Valor</option>
+                    </optgroup>
+                <!-- <optgroup label="ESTILOS"> -->
+                <!-- <option value="c1">Base em Arredondada</option> -->
+                <!-- <option value="c2">Base Quadrada</option> -->
+                <!-- <option value="c3">Base Arredondada</option> -->
+                <!-- <option value="c4">Clássico</option> -->
+                <!-- <option value="c5">Padrão</option> -->
+                
+                </select>
+                <label for="opcoes">Personalizar</label>
+                <br><br>
+                <p id="perscor"></p>
+                <div id="TamanhoNomeProduto">
+                <button onclick="cre()">+</button>
+                <button onclick="dim()">-</button>
+                <label for="TamanhoNomeProduto">Tamanho do Nome do Produto</label>
+                </div>
+                <br>
+                <button class="botao" onclick="gerar()">Gerar Cartaz</button>
+                <button class="botao" id="download" onclick="ae()">Baixar Cartaz</button> 
+                <button class="botao" onclick="genPDF()">Salvar em PDF</button>
+                <button class="botao" onclick="window.location.reload()">Limpar</button>
+                <label for="marcaregistrada" id="marca">Paulo Moura Tech® 2024</label> 
+            </div>
+        
+        </section>
+</div></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

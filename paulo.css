@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Cedarville+Cursive&family=Chelsea+Market&family=Courier+Prime:ital,wght@1,700&family=Barrio&family=Metal+Mania&family=Righteous&family=Roboto:ital,wght@0,400;1,900&family=Sarala:wght@700&family=Special+Elite&display=swap');
+@font-face {
+   font-family: GraublauWeb;
+   src: url("Rustico\ Regular\ 400.otf") format("opentype");
+}
+.container{
+   padding-bottom: 30px;
+}
+
+body {
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   
+   background-image: url(fundo.jpg);
+   background-repeat: repeat-y;
+}
+*{
+    margin: 0;
+ }
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /*header{
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+    font-family: Rustico;
+    color: rgb(248, 1, 1);
+    padding: 10px;
+    justify-content:space-around;
+    align-items: center;
+    border: solid 9px #fb0303;
+    }*/
+
+ /*footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+ }*/
+ .conteudo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+ }
+ 
+ body{
+    display: flex;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    height: 100%;
+ }
+ #placa{
+   position: relative;
+   width: 400px;
+   height: 560px;   
+   background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+   overflow: hidden;
+   border:  solid 10px  #f90101; 
+ }
+ #tpromoção{
+   border-bottom: solid 5px rgb(250, 2, 2) ;
+   font-weight: bold;
+   background-image: linear-gradient(to right, rgb(249, 249, 249) , yellow);
+   font-size: 70px;
+   font-family:Rustico;
+   text-align: center;
+   color: rgb(252, 4, 4);        
+   margin-bottom: auto;
+ }
+ #produto{
+   position: absolute;
+   width: 100%;
+   height: 42%;
+   text-align: center;
+   font-family: Rustico;
+ }
+#promocao{
+ padding: 4px;
+ margin-bottom:-15px;
+}
+#tipoDeProduto{
+ font-weight: bold;
+ font-size: 40px;
+ margin-bottom: 0;
+}
+#NomeDoProduto{
+ position: relative;
+ font-family: 'Rustico';
+ position: relative; 
+ left: 52%;
+ font-size: 70px;
+ transform: translate(-50%, -1%);
+ margin: -10px;
+}
+.nomeproduto{
+ color: rgb(0, 0, 0);
+}
+#descricao{
+ font-family: 'Rustico';
+ font-weight: bold;
+ font-size: 30px;
+ margin-bottom: 0;
+}
+#s{
+ font-weight: bold;
+ position: absolute;
+ font-size: 60px;
+ left: 30px;
+ top: 20px;
+}
+#Reais{
+ font-family: Rustico;
+ font-weight: bold;
+ position: absolute;
+ font-size: 150px;
+ right: 200px;
+ top: 50px;
+}
+#centavos{
+ font-family: Rustico;
+ font-weight: bold;
+ position: absolute;
+ font-size: 100px;
+ left: 250px;
+ top: 60px;
+ text-decoration: underline;
+}
+#virgula{
+ font-family: Rustico;
+ position: absolute;
+ font-size: 150px;
+ top: 30px;
+ right: 150px;
+}
+.preco{
+ font-family: Rustico;
+ color: red;
+}
+#peso{
+ font-weight: bold;
+ margin-bottom: 0;
+ position: absolute;
+ font-size: 30px;
+ position: absolute;
+ bottom: 30px;
+ right: 50px;
+}
+/* #base{ */
+/*  position: absolute; */
+/*  width: 380px; */
+/*  height: 240px; */
+/*  background-color: yellow; */
+/*  margin: 10px; */
+/*  border-radius: 70px; */
+/*  border: solid 3px rgb(255, 0, 0); }*/
+#logo{
+
+display: flex;
+position: relative;
+background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+font-family: Rustico;
+font-size: 20px;
+color: rgb(248, 1, 1);
+padding: 10px;
+justify-content:space-around;
+align-items: center;
+border: solid 9px #fb0303;
+box-shadow: 6px -4px rgb(234, 67, 52);
+margin-bottom:20px;
+}
+#marca{
+display: flex;
+position: relative;
+color: rgb(248, 1, 1);
+padding: 0px;
+justify-content:space-around;
+align-items: center;
+border: solid 1px #fb0303;
+box-shadow: 6px -4px rgb(234, 67, 52);
+margin-bottom:10px;
+
+
+}
+#dentrada{
+   width: 320px;
+   padding: 20px;
+   border: 2px solid rgb(252, 0, 0) ;
+   border-radius: 10px;
+   background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+   font-size: 18px;
+   border: 5px solid red;  
+   box-shadow: 15px -4px rgb(234, 67, 52);
+}
+#itipoDeProduto{
+border: 3px solid #ff0000; 
+outline:0; 
+height:30px; 
+width: 250px; 
+border-radius: 4px 0 0 4px;
+font-size: 20px;
+
+}
+#iNomeDoProduto{
+border: 3px solid #ff0000; 
+outline:0; 
+height:30px; 
+width: 250px; 
+border-radius: 4px 0 0 4px;
+font-size: 20px;
+}
+#idescricao{
+border: 3px solid #ff0000; 
+outline:0; 
+height:30px; 
+width: 200px; 
+border-radius: 4px 0 0 4px;
+font-size: 20px;
+}
+#kg{
+border: 3px solid #ff0000; 
+outline:0; 
+height:30px; 
+width: 50px; 
+border-radius: 4px 0 0 4px;
+font-size: 20px;
+}
+#iValorDoProduto{
+border: 3px solid #ff0000; 
+outline:0; 
+height:30px; 
+width: 70px; 
+border-radius: 4px 0 0 4px;
+font-size: 20px;
+}
+.botao{
+ margin-bottom: 10%;
+ width: 100%;
+ border-radius: 15px;
+ background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+ font-size: 15px;
+ padding: 3px;
+ border: 3px solid red;  
+
+
+}
+button:hover{
+   
+ background-color:  rgb(255, 0, 0);
+ color: linear-gradient(to right, rgb(249, 249, 249) , rgb(141, 39, 39));
+}
+#dvalor{
+ position: absolute;
+ width: 100%;
+ height: 50%;
+ top: 300px;
+}
+.footer_info{
+   text-align: center;
+   color: white;
+   margin-bottom: 0%;
+}
+@media print{
+body * {
+   visibility: hidden;
+  }
+ 
+#placa, #placa * {
+visibility: visible;
+ }
+#placa{ 
+background-image: linear-gradient(to right, rgb(249, 249, 249) , rgba(255, 255, 0, 0.66));
+border:  solid 10px  #f90101; 
+position: fixed;
+left: 0;
+top: 0;
+ }
+}
+@media screen and (max-width: 420px) {
+   .section1{
+      width: 100%; 
+   }
+   header{
+      width: 100%;
+   }
+   body{
+      width: 110%;
+   }
+   }
+    .section1{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       gap: 1rem;
+       width: 100%;
+    } 
+@media screen and (maX-width: 360px) {
+   .section1{
+      width: 100%; 
+   }
+   header{
+      width: 110%;
+   }
+   body{
+      width: 120%;
+   }
+   
+   
+
+      
+   }
